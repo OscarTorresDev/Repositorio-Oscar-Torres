@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+.static-side {
+    background-color: #4f5d6b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.static-side h1 {
+    font-size: 48 px;
+    letter-spacing: -1.2px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700; /* Puedes usar 400, 600, 700 según el grosor */
+    color: rgb(226, 232, 240); /* Color del texto */
+    
+
+}
+.static-side p {
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+}
+.menu a {
+    text-decoration: none;
+    color:rgb(226, 232, 240);
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+.scrollable-side {
+    overflow-y: scroll;
+    padding: 20px;
+    background-color: #4f5d6b;
+    height: 100%;
+}
+.scrollable-side::-webkit-scrollbar {
+    width: 10px;
+}
+.scrollable-side::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+.scrollable-side::-webkit-scrollbar-thumb {
+    background-color: #61dafb;
+    border-radius: 5px;
+}
+.section {
+    margin-bottom: 50px;
+}
+.section h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #61dafb;
+    display: inline-block;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+}
+.skill-card {
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.contact-form {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: white;
+    font-weight: bold;
+}
+.contact-form button:hover {
+    background-color: #0077b6;
+}
